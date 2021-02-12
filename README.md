@@ -44,6 +44,21 @@ The build result can be obtained from within the `build` folder
 
 You have `build-linux`, `build-macos` and `build-windows`. Or simply `make build` to build them all.
 
+### Get the released binary
+
+You can get a released binary for `windows`, `linux` or `macos` but
+they are all for `amd64` architecture for other arch, you have to build
+them from source.
+
+To get the binnary, you can go to the release page 
+
+[https://github.com/hyperjumptech/munin-urlhealth-plugin/releases](https://github.com/hyperjumptech/munin-urlhealth-plugin/releases)
+
+Choose your release version, and straight away download the binnary.
+
+Once you get it, you might need to rename them, removing the extension and OS (for linux and macos).
+(eg. from `munin-urlhealth-plugin-linux.bin` to just `munin-urlhealth-plugin`)
+
 ## Installing the binary
 
 Once you've a copy of the plugin's binary, you should copy the binary 
@@ -105,7 +120,5 @@ While monitoring this URL, the plugin reports:
 If the call is timed-out, or any http client error
 the plugin will yield response code 599.
 
-If the response time is 0, mostlikely that the URL is
+If the response time is 0, most-likely that the URL is
 never get called due to error, network error or invalid URL.
-
-So, combination of code 599 and response time 0 is bad. 
