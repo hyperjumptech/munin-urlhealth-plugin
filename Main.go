@@ -59,13 +59,12 @@ func execConfig() {
 	fmt.Println("graph_title HTTP Performance")
 	fmt.Println("graph_vlabel Response")
 	fmt.Println("code.label code")
-	fmt.Println("code.warning [300:399]")
-	fmt.Println("code.critical [400:1000]")
+	fmt.Println("code.warning 300:399")
+	fmt.Println("code.critical 400:1000")
 	fmt.Println("response.label response time")
-	fmt.Println("response.warning [7000:14999]")
-	fmt.Println("response.critical [7000:10000000]")
+	fmt.Println("response.warning 7000:14999")
+	fmt.Println("response.critical 15000:10000000")
 	fmt.Println("graph_category webserver")
-	fmt.Println("graph_scale no")
 	os.Exit(0)
 }
 
